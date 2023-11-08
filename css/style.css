@@ -129,13 +129,14 @@ nav button{
     margin-left: 20px;
 }
 
-.email-signup button{
+.main-content button{
     background: #db0001;
     border: 0;
     outline: 0;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 5%;
     padding: 15px 30px;
 }
 

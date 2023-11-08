@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moha regiteration</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../Register.css">
+	<script src="Register.js"></script>
+	<style>
+		.register-box {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 20px;
+		}
+		.register-box section {
+			grid-column: span 2;
+		}
+	</style>
+</head>
+<body>
+	<h2>Online registration Form</h2>
+	<fieldset class="register-box">
+		<legend>Register for Class</legend>
+		<section>
+			<label><h4>First name:</h4></label>
+			<input type="name" id="name" name="name" required><br><br>
+
+			<label><h4>Middle name:</h4></label>
+			<input type="name" id="name" name="name" required><br><br>
+
+			<label><h4>Last name:</h4></label>
+			<input type="name" id="name" name="name" required><br><br>
+
+
+			<label><h4>Select a faculty:</h4></label>
+			<input type="Checkbox" id="fuculty" name="faculty" value="FOC"> FOC &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="FENG"> FENG &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="FEDU"> FEDU &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="Medicine"> Medicine &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="FMS"> FMS &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="FECO"> FECO &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="LOW"> LOW &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="FASS"> FASS &nbsp;
+			<input type="Checkbox" id="faculty" name="faculty" value="Accountance"> Accountance <br><br>
+
+			<label><h4>Secondry school</h4></label>
+			<select id="school" name="school" required>
+				<option value="">Select school</option>
+				<option value="Ahmed Guray">Ahmed Guray</option>
+				<option value="Imaam Shaafici">Imaam Shaafici</option>
+				<option value="Hoyga Xamar">Hoyga Xamar</option>
+				<option value="Maxamud Xarbi">Maxamud Xarbi</option>
+				<option value="Alfajri-school">Alfajri-school</option>
+				<option value="GalKacyo">GalKacyo</option>
+			</select><br><br>
+
+			<lable><h4>From other University:</h4></lable>
+			<input type="radio" id="yes" name="university" value="yes" required> Yes	&nbsp; 
+			<input type="radio" id="no" name="university" value="no" required> No<br><br>
+
+			<label><h4>If yes, please provide university name:</h4></label>
+			<input type="text" id="university-name" name="university-name"><br><br>
+
+			<label><h4>Current semester:</h4></label>
+			<input type="number" id="current-semester" name="current-semester" required><br><br>	
+
+		</section>
+
+		<section>
+			<label><h4>Sex:</h4></label>
+			<input type="radio" id="male" name="gender" value="male" required> male &nbsp;
+			<input type="radio" id="female" name="gender" value="female" required> female<br><br>
+
+			<label><h4>Year of birth:</h4></label>
+			<input type="date" id="birthday" name="birthdate" required><br><br>
+
+			<label><h4>Country:</h4></label>
+			<select id="location" name="location" required>
+				<option value="">Select City</option>
+				<option value="Moqdisho">Moqdisho</option>
+				<option value="Hargeysa">Hargeysa</option>
+				<option value="Bosaso">Bosaso</option>
+				<option value="Kismayo">Kismayo</option>
+				<option value="Galkacyo">Galkacyo</option>
+				<option value="Beydhabo">Beydhabo</option>
+			</select><br><br>
+
+			<label><h4>Guardian name:</h4></label>
+			<input type="name" id="guardian-name" name="guardian-name" required><br><br>
+
+			<labe><h4>Relationship:</h4></labe>		
+			<input type="Checkbox" id="father" name="relationship" value="father"> Father &nbsp;
+			<input type="Checkbox" id="mother" name="relationship" value="mother"> Mother &nbsp;
+			<input type="Checkbox" id="uncle" name="relationship" value="uncle"> Uncle &nbsp;
+			<input type="Checkbox" id="aunt" name="relationship" value="aunt"> Aunt &nbsp;
+			<input type="Checkbox" id="brother" name="relationship" value="brother"> Brother &nbsp;
+			<input type="Checkbox" id="sister" name="relationship" value="sister"> Sister &nbsp;
+			<input type="Checkbox" id="cousin" name="relationship" value="cousin"> Cousin &nbsp;
+			<input type="Checkbox" id="others" name="relationship" value="others"> Others &nbsp; <br><br>
+
+			<label><h4>Specify:</h4></label>
+			<input type="name" id="relationship-specify" name="relationship-specify"><br><br>
+
+			<label><h4>Sponsorship:</h4></label>
+			<input type="radio" id="self-sponsor" name="sponsorship" value="self-sponsor"> Self sponsor &nbsp;
+			<input type="radio" id="organization-sponsor" name="sponsorship" value="organization-sponsor"> Organization<br><br>
+
+		</section>
+
+		<section>
+			<label><h4>Email:</h4></label>
+			<input type="email" id="email" name="email" placeholder="Enter your email"required><br><br>
+
+			<label><h4>Phone number:</h4></label>
+			<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+			<label><h4>Address:</h4></label>
+			<input type="text" id="address" name="address" placeholder="Enter your address" required><br><br>
+
+			<label><h4>City:</h4></label>
+			<input type="text" id="city" name="city" placeholder="Enter your city" required><br><br>
+
+			<label><h4>Postal code:</h4></label>
+			<input type="text" id="postal-code" name="postal-code" placeholder="Enter your postal code" required><br><br>
+
+			<label><h4>Upload your photo:</h4></label>
+			<input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+			<label><h4>Upload your ID card:</h4></label>
+			<input type="file" id="id-card" name="id-card" accept="image/*" required><br><br>
+		</section>
+
+		<section>
+			<label><h4>Choose a username:</h4></label>
+			<input type="text" id="username" name="username" required><br><br>
+
+			<label><h4>Choose a password:</h4></label>
+			<input type="password" id="password" name="password" required><br><br>
+
+			<label><h4>Confirm password:</h4></label>
+			<input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</section>
+	</fieldset>
+</body>
+</html>

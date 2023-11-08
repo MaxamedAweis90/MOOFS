@@ -1,0 +1,122 @@
+<!DOCKTYPE html>
+<html lang="en">
+<head>
+    <title>MOOFS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--custom css-->
+    <link rel="stylesheet" href="../css/others.css">
+
+    <link rel="stylesheet" href="pages.css">
+    
+    <!--box icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    
+    <!--box icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+	
+<header>
+<div class="header">
+    <nav>
+      <h1 class="logo"><a href="../moofs.html">MOOFS</a></h1>
+        <div>
+            
+			<ul>
+				<li><a href="../moofs.html">Home</a></li>
+				<li><a href="../Services.html">Services</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+				<li class="dropdown">
+					<a class="dropbtn">Categories</a>
+					<ul class="dropdown-content">
+    					<li><a href="../Pages/Akshin.html">Akshin</a></li>
+    					<li><a href="../Pages/Qosol.html">Qosol</a></li>
+						<li><a href="../Pages/Jacyl.html">Jacyl</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	<div class="county-dropdown">
+  <button class="county-btn">Default <i class='bx bxs-chevron-down'></i></button>
+  <ul class="county-menu">
+    <li><a href="#">Somali</a></li>
+    <li><a href="#">English</a></li>
+    <li><a href="#">Arabic</a></li>
+    <li><a href="#">Japanese</a></li>
+    <li><a href="#">Chinease</a></li>
+    <li><a href="#">Italian</a></li>
+    <li><a href="#">French</a></li>
+    <li><a href="#">Tai</a></li>
+    <li><a href="#">Korean</a></li>
+    <li><a href="#">Turkish</a></li>
+    <li><a href="#">Hindi</a></li>
+    <li><a href="#">Pakistani</a></li>
+    <li><a href="#">Urdu</a></li>
+  </ul>
+</div>		
+        
+    </nav>
+</div>
+</header>
+
+
+     <!-- Movies section -->
+
+
+<main>
+  <div class="page_card">
+    <h2>Filimada Akshinka</h2>
+    <hr>
+    <div class="row_cards">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+      <img src="../pics/movie/Captain_Phillips.jpg" alt="" class="row_card">
+    </div>
+  </div>
+</main>
+
+	    
+	<script>	
+		/*dropdown menu click*/
+		
+// Get the dropdown element
+const dropdown = document.querySelector('.dropdown');
+const dropbtn = dropdown.querySelector('.dropbtn');
+
+// Add a click event listener to the dropbtn element
+dropbtn.addEventListener('click', function(event) {
+  // Prevent the default action of the anchor tag
+  event.preventDefault();
+  // Toggle the "active" class on the dropdown element
+  dropdown.classList.toggle('active');
+});
+
+// Add a click event listener to the document object
+document.addEventListener('click', function(event) {
+  // If the clicked element is not inside the dropdown element, remove the "active" class from the dropdown element
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.remove('active');
+  }
+});
+  </script>
+</body>
+</html>
